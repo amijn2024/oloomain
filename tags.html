@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3XCQS1MRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-M3XCQS1MRR');
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags (multi‑platform) -->
+    <title>Social Media Tags & Hashtags Generator for YouTube, Facebook, Instagram, TikTok & X | oloo.fyi</title>
+    <meta name="description" content="Free multi‑platform tags and hashtags generator by oloo.fyi. Paste any caption, description or sentence and instantly create comma‑separated tags and hashtags for YouTube, Facebook, Instagram, TikTok and X/Twitter. Boost your reach today.">
+    <meta name="keywords" content="YouTube tags generator, Facebook hashtag generator, Instagram tag extractor, TikTok hashtag tool, X hashtag generator, Twitter tag tool, social media tags, free hashtag maker, comma tags generator, oloo.fyi, ProTools">
+    <meta name="author" content="oloo.fyi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://oloo.fyi/tags">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Social Media Tags & Hashtags Generator – YouTube, Instagram, TikTok, X | oloo.fyi">
+    <meta property="og:description" content="One tool for all your social tags. Generate perfect comma tags and hashtags for YouTube, Facebook, Instagram, TikTok and X from any text. Free, instant, no sign‑up.">
+    <meta property="og:url" content="https://oloo.fyi/tags">
+    <meta property="og:site_name" content="oloo.fyi">
+    <meta property="og:image" content="https://oloo.fyi/images/logo.png">
+    <!-- Replace with an actual 1200x630 image of your tool -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Social Media Tags & Hashtags Generator – YouTube, Instagram, TikTok, X">
+    <meta name="twitter:description" content="Create platform‑ready tags and hashtags for YouTube, Facebook, Instagram, TikTok and X. Paste your text and get instant results.">
+    <meta name="twitter:image" content="https://oloo.fyi/images/logo.png">
+    <!-- Use the same 1200x630 image -->
+
+
+    <!-- ==================== GOOGLE ADSENSE VERIFICATION ==================== -->
+    <meta name="google-adsense-account" content="ca-pub-7066409508007262">
+
+    <!-- PWA / Favicon -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <!-- Place your actual favicon files in the root -->
+
+    <!-- Theme color for browser UI -->
+    <meta name="theme-color" content="#6200ea">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .tool-card {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: left;
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--primary); }
+        
+        textarea.form-control {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            font-size: 15px;
+            resize: vertical;
+            transition: all 0.3s ease;
+        }
+        textarea.form-control:focus { border-color: var(--primary); box-shadow: 0 0 5px rgba(98, 0, 234, 0.3); }
+        
+        .output-section {
+            display: none;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .output-box {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .output-box h3 { font-size: 16px; color: var(--primary); margin-bottom: 10px; }
+        .output-text { 
+            font-family: monospace; 
+            color: #333; 
+            line-height: 1.6; 
+            word-wrap: break-word; 
+            min-height: 60px;
+        }
+        
+        /* Copy Button Animation */
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            font-size: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .copy-btn:hover { background: var(--primary-light); transform: scale(1.05); }
+        .copy-btn:active { transform: scale(0.95); }
+        .copy-btn.copied { background: #00c853; pointer-events: none; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="/" class="logo">ProTools</a>
+            <nav class="nav-links" id="nav-links"></nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Social Media Tags & Hashtags Generator</h1>
+            <p>Create perfect comma tags and hashtags for YouTube, Facebook, Instagram, TikTok and X/Twitter — all from one text.</p>
+        </div>
+
+        <!-- Ad Slot 1 (Banner) -->
+        <div class="ad-container">
+            <span class="ad-label">Sponsored</span>
+            <div id="manual-ad-slot"></div>
+        </div>
+
+        <!-- Tool Container -->
+        <div class="tool-card">
+            <div class="form-group">
+                <label for="inputText">Paste Video Description, Caption or any Sentence:</label>
+                <textarea id="inputText" class="form-control" rows="5" placeholder="E.g., In this video, I will show you how to make money online fast in 2026. #makemoney #freelancing"></textarea>
+            </div>
+            
+            <button class="btn" id="generateBtn" style="width: 100%;">Extract & Generate Tags</button>
+
+            <!-- Output Section -->
+            <div class="output-section" id="outputSection">
+                <!-- Comma Tags Box -->
+                <div class="output-box">
+                    <h3>🏷️ Comma‑Separated Tags (For YouTube, Facebook, Instagram, TikTok & X)</h3>
+                    <div class="output-text" id="commaTags"></div>
+                    <button class="copy-btn" onclick="copyToClipboard('commaTags', this)">Copy Tags</button>
+                </div>
+
+                <!-- Hash Tags Box -->
+                <div class="output-box">
+                    <h3>#️⃣ Hashtags (For Descriptions & Captions)</h3>
+                    <div class="output-text" id="hashTags"></div>
+                    <button class="copy-btn" onclick="copyToClipboard('hashTags', this)">Copy Hashtags</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Slot 2 (Below Action/Tool) -->
+        <div class="ad-container">
+            <span class="ad-label">Advertisement</span>
+            <div style="background: #ddd; height: 90px; display: flex; align-items: center; justify-content: center; color: #777;">
+                AdSense Banner Slot
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="subscribe-box">
+                <input type="email" placeholder="Enter your email address" required>
+                <button class="btn">Subscribe</button>
+            </div>
+            <div class="compliance-links">
+                <a href="privacy-policy">Privacy Policy</a>
+                <a href="terms">Terms of Service</a>
+                <a href="about">About Us</a>
+                <a href="contact">Contact Us</a>
+            </div>
+            <p style="margin-top: 15px; font-size: 12px; color: #999;">&copy; 2026 ProTools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JS for Navbar and Ads -->
+    <script src="main.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7066409508007262" crossorigin="anonymous"></script>
+
+    <script>
+        // Stop words (Common words to ignore)
+        const stopWords = ['a', 'an', 'and', 'are', 'as', 'at', 'be', 'but', 'by', 'for', 'if', 'in', 'into', 'is', 'it', 'no', 'not', 'of', 'on', 'or', 'such', 'that', 'the', 'their', 'then', 'there', 'these', 'they', 'this', 'to', 'was', 'will', 'with', 'i', 'you', 'he', 'she', 'we', 'how', 'what', 'why', 'who', 'when', 'where', 'show', 'make', 'use', 'using', 'also', 'just', 'like', 'subscribe', 'video', 'channel', 'guys', 'welcome', 'my'];
+
+        document.getElementById('generateBtn').addEventListener('click', () => {
+            const text = document.getElementById('inputText').value;
+            if (!text.trim()) {
+                alert("Please paste some text first!");
+                return;
+            }
+
+            // 1. Extract existing hashtags (e.g. #money)
+            const hashTagRegex = /#[\w]+/g;
+            const existingHashtagsMatch = text.match(hashTagRegex) || [];
+            const existingHashtags = existingHashtagsMatch.map(t => t.replace('#', '').toLowerCase());
+
+            // 2. Remove existing hashtags from the main text to avoid duplicates during processing
+            let textWithoutHashtags = text.replace(hashTagRegex, ' ');
+
+            // 3. Clean text: remove punctuations, keep letters/numbers, convert to lowercase
+            let words = textWithoutHashtags.toLowerCase().replace(/[^\w\s]/g, ' ').split(/\s+/);
+
+            // 4. Filter logic: remove stop words, short words, and empty spaces
+            let keywords = words.filter(word => word.length > 2 && !stopWords.includes(word));
+
+            // 5. Combine extracted words and existing hashtags, then remove duplicates
+            let allUniqueTags = [...new Set([...existingHashtags, ...keywords])];
+
+            // 6. Generate Formats
+            const commaTagsOutput = allUniqueTags.join(', ');
+            const hashTagsOutput = allUniqueTags.map(tag => `#${tag}`).join(' ');
+
+            // 7. Display Results
+            document.getElementById('commaTags').innerText = commaTagsOutput || "No valid tags found.";
+            document.getElementById('hashTags').innerText = hashTagsOutput || "No valid tags found.";
+            
+            // Show the output section with animation
+            document.getElementById('outputSection').style.display = 'block';
+        });
+
+        // Copy to Clipboard Function with Button Animation
+        function copyToClipboard(elementId, btnElement) {
+            const textToCopy = document.getElementById(elementId).innerText;
+            if (!textToCopy || textToCopy === "No valid tags found.") return;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                // Change button state
+                const originalText = btnElement.innerText;
+                btnElement.innerText = "Copied! ✔";
+                btnElement.classList.add("copied");
+
+                // Revert back after 2 seconds
+                setTimeout(() => {
+                    btnElement.innerText = originalText;
+                    btnElement.classList.remove("copied");
+                }, 2000);
+            }).catch(err => {
+                console.error("Failed to copy text: ", err);
+            });
+        }
+    </script>
+
+    <!-- ================= Structured Data (JSON-LD) ================= -->
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://oloo.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Social Media Tags & Hashtags Generator",
+          "item": "https://oloo.fyi/tags"
+        }
+      ]
+    }
+    </script>
+
+    <!-- HowTo schema (multi‑platform) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Generate Tags & Hashtags for YouTube, Facebook, Instagram, TikTok and X",
+      "description": "Use this free tool to create keyword‑rich comma tags and hashtags for all your social media posts, YouTube videos, Instagram captions, TikTok descriptions and X/Twitter tweets.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Paste your text",
+          "text": "Copy and paste any video description, caption, tweet or sentence into the input box."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Generate your tags",
+          "text": "Click 'Extract & Generate Tags' to instantly turn your text into clean, deduplicated tags."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Copy & use everywhere",
+          "text": "Copy the comma‑separated tags for YouTube, Facebook, Instagram and TikTok, or grab the hashtags for any platform description."
+        }
+      ]
+    }
+    </script>
+
+    <!-- FAQPage schema (multi‑platform) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I use this tool for Facebook, Instagram and TikTok?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! The tool generates clean comma‑separated tags and hashtags that work perfectly on Facebook posts, Instagram captions, TikTok descriptions, YouTube videos and X/Twitter tweets. Just paste your text and copy the format you need."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get the best tags for YouTube and other social media?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paste your full video description or a sentence describing your content. The tool automatically removes common stop words, extracts any existing hashtags, and combines everything into a unique, keyword‑rich list ready for YouTube, Instagram, Facebook, TikTok and X."
+          }
+        }
+      ]
+    }
+    </script>
+</body>
+</html>
