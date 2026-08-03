@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3XCQS1MRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-M3XCQS1MRR');
+    </script>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Social Media Caption Spacer – Preserve Line Breaks on Instagram, Facebook & TikTok | ProTools</title>
+    <meta name="description" content="Free tool to preserve line breaks in Instagram, Facebook and TikTok captions. Paste your caption, convert empty lines into invisible Braille spaces, and copy perfectly formatted text that won’t collapse.">
+    <meta name="keywords" content="instagram caption spacer, line break fixer, instagram formatting tool, caption invisible character, preserve instagram line breaks, facebook caption spacing, tiktok caption formatter, blank line instagram, instagram caption hacks, social media caption tool, caption spacer online">
+    <meta name="author" content="ProTools">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://oloo.fyi/caption-spacer">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Social Media Caption Spacer – Preserve Line Breaks on Instagram, Facebook & TikTok | ProTools">
+    <meta property="og:description" content="Stop losing your caption formatting! Use our free tool to add invisible line breaks that stick on Instagram, Facebook, and TikTok. Copy in one click.">
+    <meta property="og:url" content="https://oloo.fyi/caption-spacer">
+    <meta property="og:type" content="website">
+    <!-- Replace the image URL with your own social preview image -->
+    <meta property="og:image" content="https://oloo.fyi/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Social Media Caption Spacer – Preserve Line Breaks on Instagram, Facebook & TikTok">
+    <meta name="twitter:description" content="Free tool to keep your Instagram, Facebook & TikTok captions perfectly spaced. Invisible Braille character makes line breaks stick.">
+    <meta name="twitter:image" content="https://oloo.fyi/logo.png">
+    
+
+    <!-- ==================== GOOGLE ADSENSE VERIFICATION ==================== -->
+    <meta name="google-adsense-account" content="ca-pub-7066409508007262">
+    
+    <!-- PWA / Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .tool-card {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: left;
+        }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--primary); }
+        
+        textarea.form-control {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            font-size: 15px;
+            resize: vertical;
+            transition: all 0.3s ease;
+        }
+        textarea.form-control:focus { border-color: var(--primary); box-shadow: 0 0 5px rgba(98, 0, 234, 0.3); }
+
+        /* Stats Bar for Character & Hashtag Count */
+        .stats-bar {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            background: #f1f3f5;
+            padding: 8px 15px;
+            border-radius: 6px;
+        }
+        .stats-bar span strong { color: var(--primary); }
+        
+        .output-section {
+            display: none;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .output-box {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .output-box h3 { font-size: 16px; color: var(--primary); margin-bottom: 10px; }
+        
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .copy-btn:hover { background: var(--primary-light); transform: scale(1.03); }
+        .copy-btn:active { transform: scale(0.97); }
+        .copy-btn.copied { background: #00c853; pointer-events: none; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* FAQ Section Styles – matches tool card theme */
+        .faq-card {
+            margin-top: 40px;
+        }
+        .faq-card h2 {
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 25px;
+        }
+        .faq-card details {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            padding: 15px 20px;
+            transition: all 0.2s ease;
+        }
+        .faq-card details[open] {
+            background: #ffffff;
+            border-color: var(--primary);
+            box-shadow: 0 0 8px rgba(98,0,234,0.1);
+        }
+        .faq-card summary {
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            color: #333;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-card summary::-webkit-details-marker { display: none; }
+        .faq-card summary::after {
+            content: "+";
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--primary);
+            transition: transform 0.2s;
+        }
+        .faq-card details[open] summary::after {
+            content: "−";
+            transform: rotate(180deg);
+        }
+        .faq-card .faq-answer {
+            margin-top: 12px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Dynamic Navbar -->
+    <header>
+        <div class="nav-container">
+            <a href="/" class="logo">ProTools</a>
+            <nav class="nav-links" id="nav-links"></nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Social Media Caption Spacer</h1>
+            <p>Format your Instagram, Facebook & TikTok captions with clean line breaks that won't disappear.</p>
+        </div>
+
+        <!-- Ad Slot 1: Manual JSON Banner -->
+        <div class="ad-container">
+            <span class="ad-label">Sponsored</span>
+            <div id="manual-ad-slot"></div>
+        </div>
+
+        <!-- Tool Container -->
+        <div class="tool-card">
+            <div class="form-group">
+                <label for="captionInput">Paste or Type Your Caption Here:</label>
+                <textarea id="captionInput" class="form-control" rows="7" placeholder="Write your caption here...
+
+Leave blank spaces between paragraphs like this!
+
+It will stay perfectly formatted on Instagram & Facebook. #vlog #content"></textarea>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <span>Characters: <strong id="charCount">0</strong> / 2200 (IG Limit)</span>
+                <span>Hashtags: <strong id="hashtagCount">0</strong> / 30</span>
+            </div>
+            
+            <button class="btn" id="formatBtn" style="width: 100%;">Convert & Format Caption</button>
+
+            <!-- Output Section -->
+            <div class="output-section" id="outputSection">
+                <div class="output-box">
+                    <h3>✨ Formatted Caption (Ready to Copy)</h3>
+                    <textarea id="formattedOutput" class="form-control" rows="7" readonly style="background: white; cursor: text;"></textarea>
+                    <button class="copy-btn" id="copyBtn">Copy Formatted Caption</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Slot 2: Google AdSense Banner -->
+        <div class="ad-container">
+            <span class="ad-label">Advertisement</span>
+            <div style="background: #ddd; height: 90px; display: flex; align-items: center; justify-content: center; color: #777;">
+                AdSense Banner Slot
+            </div>
+        </div>
+
+        <!-- FAQ Section for SEO & User Help -->
+        <div class="tool-card faq-card">
+            <h2>Frequently Asked Questions</h2>
+            
+            <details>
+                <summary>Why do Instagram captions lose their line breaks?</summary>
+                <div class="faq-answer">
+                    Instagram automatically removes empty lines when you post. This collapses your carefully spaced paragraphs into one block. Our tool inserts an invisible Braille pattern space (U+2800) on empty lines, so Instagram reads it as a non‑blank character and preserves the line break.
+                </div>
+            </details>
+            
+            <details>
+                <summary>How do I use this caption spacer tool?</summary>
+                <div class="faq-answer">
+                    It’s simple: paste or type your caption into the box above, click the <strong>Convert &amp; Format Caption</strong> button, and then copy the formatted text. Paste that version directly into Instagram, Facebook, or TikTok and your spacing stays intact.
+                </div>
+            </details>
+            
+            <details>
+                <summary>Is there a character limit for Instagram captions?</summary>
+                <div class="faq-answer">
+                    Yes – Instagram allows up to 2,200 characters per caption. You can also include up to 30 hashtags. Our live counter shows exactly how many characters and hashtags you’ve used, so you’ll never hit the limit unexpectedly.
+                </div>
+            </details>
+            
+            <details>
+                <summary>Will this work on Facebook and TikTok as well?</summary>
+                <div class="faq-answer">
+                    Absolutely. The invisible Braille character is a standard Unicode space that works on Facebook, TikTok, LinkedIn, Twitter/X, and most social platforms. Just paste the formatted caption wherever you write posts.
+                </div>
+            </details>
+            
+            <details>
+                <summary>Why does the formatted caption contain an invisible character?</summary>
+                <div class="faq-answer">
+                    The tool replaces empty lines with the Unicode character “⠀” (U+2800, Braille blank). It looks empty to the human eye, but counts as a printable character. Social media algorithms treat it as text, so the line break before and after it is kept.
+                </div>
+            </details>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="subscribe-box">
+                <input type="email" placeholder="Enter your email address" required>
+                <button class="btn">Subscribe to get updates</button>
+            </div>
+            <div class="compliance-links">
+                <a href="privacy-policy">Privacy Policy</a>
+                <a href="terms">Terms of Service</a>
+                <a href="about">About Us</a>
+                <a href="contact">Contact Us</a>
+            </div>
+            <p style="margin-top: 15px; font-size: 12px; color: #999;">&copy; 2026 ProTools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JS for Dynamic Navbar & Manual Ads -->
+    <script src="main.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7066409508007262" crossorigin="anonymous"></script>
+
+    <!-- Tool Functionality (unchanged) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const captionInput = document.getElementById('captionInput');
+            const formattedOutput = document.getElementById('formattedOutput');
+            const formatBtn = document.getElementById('formatBtn');
+            const outputSection = document.getElementById('outputSection');
+            const copyBtn = document.getElementById('copyBtn');
+            const charCount = document.getElementById('charCount');
+            const hashtagCount = document.getElementById('hashtagCount');
+
+            // Live Character & Hashtag Counter
+            captionInput.addEventListener('input', () => {
+                const text = captionInput.value;
+                
+                // Character length
+                charCount.textContent = text.length;
+
+                // Hashtag count (matches #word)
+                const hashtags = text.match(/#[\w]+/g) || [];
+                hashtagCount.textContent = hashtags.length;
+            });
+
+            // Format Caption Logic
+            formatBtn.addEventListener('click', () => {
+                const rawText = captionInput.value;
+                if (!rawText.trim()) {
+                    alert("Please write or paste a caption first!");
+                    return;
+                }
+
+                // Replace empty lines or whitespace-only lines with Braille Blank Space (\u2800)
+                const lines = rawText.split('\n');
+                const formattedLines = lines.map(line => {
+                    if (line.trim() === '') {
+                        return '⠀'; // Invisible Braille character
+                    }
+                    return line;
+                });
+
+                const finalCaption = formattedLines.join('\n');
+                
+                // Show Output
+                formattedOutput.value = finalCaption;
+                outputSection.style.display = 'block';
+
+                // Smooth scroll to output
+                outputSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+
+            // Copy to Clipboard Animation
+            copyBtn.addEventListener('click', () => {
+                if (!formattedOutput.value) return;
+
+                navigator.clipboard.writeText(formattedOutput.value).then(() => {
+                    const originalText = copyBtn.innerText;
+                    copyBtn.innerText = "Copied to Clipboard! ✔";
+                    copyBtn.classList.add("copied");
+
+                    setTimeout(() => {
+                        copyBtn.innerText = originalText;
+                        copyBtn.classList.remove("copied");
+                    }, 2500);
+                }).catch(err => {
+                    console.error("Copy failed:", err);
+                });
+            });
+        });
+    </script>
+
+    <!-- Structured Data for SEO (FAQ + WebApplication) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why do Instagram captions lose their line breaks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Instagram automatically removes empty lines when you post. This collapses your carefully spaced paragraphs into one block. Our tool inserts an invisible Braille pattern space (U+2800) on empty lines, so Instagram reads it as a non‑blank character and preserves the line break."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I use this caption spacer tool?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It’s simple: paste or type your caption into the box above, click the Convert & Format Caption button, and then copy the formatted text. Paste that version directly into Instagram, Facebook, or TikTok and your spacing stays intact."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a character limit for Instagram captions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes – Instagram allows up to 2,200 characters per caption. You can also include up to 30 hashtags. Our live counter shows exactly how many characters and hashtags you’ve used, so you’ll never hit the limit unexpectedly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will this work on Facebook and TikTok as well?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. The invisible Braille character is a standard Unicode space that works on Facebook, TikTok, LinkedIn, Twitter/X, and most social platforms. Just paste the formatted caption wherever you write posts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the formatted caption contain an invisible character?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The tool replaces empty lines with the Unicode character “⠀” (U+2800, Braille blank). It looks empty to the human eye, but counts as a printable character. Social media algorithms treat it as text, so the line break before and after it is kept."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Social Media Caption Spacer",
+      "url": "https://oloo.fyi/caption-spacer",
+      "description": "Free online tool to add invisible line breaks to Instagram, Facebook and TikTok captions so your formatting never collapses.",
+      "applicationCategory": "Utility",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</body>
+</html>

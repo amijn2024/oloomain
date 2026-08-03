@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3XCQS1MRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-M3XCQS1MRR');
+    </script>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Free Online Case Converter & Title Capitalizer | oloo.fyi</title>
+    <meta name="description" content="Use our free online case converter tool to quickly change text to uppercase, lowercase, title case, sentence case, capitalized case, or alternating case. Includes real‑time character, word, and line counts. Copy or clear with one click.">
+    <meta name="keywords" content="case converter, title capitalizer, text case changer, uppercase, lowercase, sentence case, title case, alternating case, capitalize text, free online text tool, oloo.fyi">
+    <meta name="author" content="oloo.fyi">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://oloo.fyi/case-converter">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Free Online Case Converter & Title Capitalizer">
+    <meta property="og:description" content="Convert text to uppercase, lowercase, title case, sentence case, alternating case and more. Real‑time stats, copy to clipboard, and completely free.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oloo.fyi/case-converter">
+    <meta property="og:image" content="https://oloo.fyi/logo.png">
+    <meta property="og:image:alt" content="Case Converter tool preview">
+    <meta property="og:site_name" content="oloo.fyi">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Online Case Converter & Title Capitalizer">
+    <meta name="twitter:description" content="Change text case instantly: uppercase, lowercase, title case, sentence case, and more. Real‑time stats included.">
+    <meta name="twitter:image" content="https://oloo.fyi/logo.png">
+    <meta name="twitter:image:alt" content="Case Converter tool preview">
+
+    <!-- Favicon (assumes standard /favicon.ico exists) -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <!-- ==================== GOOGLE ADSENSE VERIFICATION ==================== -->
+    <meta name="google-adsense-account" content="ca-pub-7066409508007262">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data / JSON-LD for WebApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Case Converter & Title Capitalizer",
+        "url": "https://oloo.fyi/case-converter",
+        "description": "Free online tool to convert text between uppercase, lowercase, title case, sentence case, capitalized case and alternating case. Includes real‑time character, word and line counters.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "oloo.fyi",
+            "url": "https://oloo.fyi"
+        },
+        "browserRequirements": "Requires JavaScript"
+    }
+    </script>
+
+    <style>
+        .tool-card {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: left;
+        }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--primary); }
+        
+        textarea.form-control {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            font-size: 15px;
+            resize: vertical;
+            transition: all 0.3s ease;
+        }
+        textarea.form-control:focus { border-color: var(--primary); box-shadow: 0 0 5px rgba(98, 0, 234, 0.3); }
+
+        /* Real-time Stats Bar */
+        .stats-bar {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            background: #f1f3f5;
+            padding: 10px 15px;
+            border-radius: 6px;
+        }
+        .stats-bar span strong { color: var(--primary); }
+
+        /* Action Buttons Grid */
+        .btn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .btn-action {
+            background: #f0e5ff;
+            color: var(--primary);
+            border: 1px solid var(--primary-light);
+            padding: 10px 12px;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        .btn-action:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(98, 0, 234, 0.2);
+        }
+        .btn-action:active { transform: translateY(0); }
+
+        .action-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .copy-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex: 2;
+        }
+        .copy-btn:hover { background: var(--primary-light); transform: translateY(-2px); }
+        .copy-btn.copied { background: #00c853; pointer-events: none; }
+
+        .clear-btn {
+            background: #ffebee;
+            color: #d32f2f;
+            border: 1px solid #ffcdd2;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            flex: 1;
+        }
+        .clear-btn:hover { background: #d32f2f; color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Dynamic Navbar -->
+    <header>
+        <div class="nav-container">
+            <a href="/" class="logo" aria-label="oloo.fyi home">ProTools</a>
+            <nav class="nav-links" id="nav-links" aria-label="Main navigation"></nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Case Converter & Title Capitalizer</h1>
+            <p>Easily convert text between Title Case, Sentence Case, UPPERCASE, lowercase, and more.</p>
+        </div>
+
+        <!-- Ad Slot 1: Manual JSON Banner -->
+        <div class="ad-container">
+            <span class="ad-label">Sponsored</span>
+            <div id="manual-ad-slot" aria-label="Advertisement"></div>
+        </div>
+
+        <!-- Tool Container -->
+        <div class="tool-card">
+            <div class="form-group">
+                <label for="textInput">Type or Paste Your Text Below:</label>
+                <textarea id="textInput" class="form-control" rows="8" placeholder="Type or paste your text here to convert..."></textarea>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <span>Characters: <strong id="charCount">0</strong></span>
+                <span>Words: <strong id="wordCount">0</strong></span>
+                <span>Lines: <strong id="lineCount">0</strong></span>
+            </div>
+
+            <!-- Conversion Options -->
+            <div class="btn-grid">
+                <button class="btn-action" id="btnSentence">Sentence case</button>
+                <button class="btn-action" id="btnLower">lowercase</button>
+                <button class="btn-action" id="btnUpper">UPPERCASE</button>
+                <button class="btn-action" id="btnTitle">Title Case</button>
+                <button class="btn-action" id="btnCapitalized">Capitalized Case</button>
+                <button class="btn-action" id="btnAlternating">aLtErNaTiNg cAsE</button>
+            </div>
+
+            <div class="action-row">
+                <button class="copy-btn" id="copyBtn">Copy Converted Text</button>
+                <button class="clear-btn" id="clearBtn">Clear</button>
+            </div>
+        </div>
+
+        <!-- Ad Slot 2: Google AdSense Banner -->
+        <div class="ad-container">
+            <span class="ad-label">Advertisement</span>
+            <div style="background: #ddd; height: 90px; display: flex; align-items: center; justify-content: center; color: #777;" aria-label="AdSense Banner Slot">
+                AdSense Banner Slot
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="subscribe-box">
+                <label for="subscribe-email" class="sr-only">Email address</label>
+                <input type="email" id="subscribe-email" placeholder="Enter your email address" required>
+                <button class="btn">Subscribe</button>
+            </div>
+            <div class="compliance-links">
+                <a href="privacy-policy">Privacy Policy</a>
+                <a href="terms">Terms of Service</a>
+                <a href="about">About Us</a>
+                <a href="contact">Contact Us</a>
+            </div>
+            <p style="margin-top: 15px; font-size: 12px; color: #999;">&copy; 2026 ProTools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JS for Dynamic Navbar & Manual Ads -->
+    <script src="main.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7066409508007262" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const textInput = document.getElementById('textInput');
+            const charCount = document.getElementById('charCount');
+            const wordCount = document.getElementById('wordCount');
+            const lineCount = document.getElementById('lineCount');
+            const copyBtn = document.getElementById('copyBtn');
+            const clearBtn = document.getElementById('clearBtn');
+
+            // Minor words that should remain lowercase in Title Case (unless at start/end)
+            const minorWords = new Set([
+                'a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'if', 'in', 
+                'nor', 'of', 'on', 'or', 'so', 'the', 'to', 'up', 'yet', 'via'
+            ]);
+
+            // Live Character, Word, Line Counter
+            function updateStats() {
+                const text = textInput.value;
+                charCount.textContent = text.length;
+
+                const words = text.trim() ? text.trim().split(/\s+/) : [];
+                wordCount.textContent = words.length;
+
+                const lines = text ? text.split('\n') : [];
+                lineCount.textContent = text ? lines.length : 0;
+            }
+
+            textInput.addEventListener('input', updateStats);
+
+            // 1. Sentence Case
+            document.getElementById('btnSentence').addEventListener('click', () => {
+                let val = textInput.value.toLowerCase();
+                val = val.replace(/(^\s*|[.!?]\s+)([a-z])/g, (m, sep, char) => sep + char.toUpperCase());
+                textInput.value = val;
+                updateStats();
+            });
+
+            // 2. lowercase
+            document.getElementById('btnLower').addEventListener('click', () => {
+                textInput.value = textInput.value.toLowerCase();
+                updateStats();
+            });
+
+            // 3. UPPERCASE
+            document.getElementById('btnUpper').addEventListener('click', () => {
+                textInput.value = textInput.value.toUpperCase();
+                updateStats();
+            });
+
+            // 4. Smart Title Case (AP / Chicago style capitalization)
+            document.getElementById('btnTitle').addEventListener('click', () => {
+                let text = textInput.value.toLowerCase();
+                let words = text.split(/(\s+)/); // Keep whitespace breaks
+                
+                let result = words.map((word, index) => {
+                    if (!word.trim()) return word; // Skip spaces
+
+                    const cleanWord = word.replace(/[^\w]/g, '');
+                    const isFirstOrLast = index === 0 || index === words.length - 1;
+
+                    if (isFirstOrLast || !minorWords.has(cleanWord)) {
+                        return word.charAt(0).toUpperCase() + word.slice(1);
+                    } else {
+                        return word;
+                    }
+                }).join('');
+
+                textInput.value = result;
+                updateStats();
+            });
+
+            // 5. Capitalized Case (First letter of every word)
+            document.getElementById('btnCapitalized').addEventListener('click', () => {
+                let val = textInput.value.toLowerCase();
+                textInput.value = val.replace(/\b[a-z]/g, char => char.toUpperCase());
+                updateStats();
+            });
+
+            // 6. aLtErNaTiNg cAsE
+            document.getElementById('btnAlternating').addEventListener('click', () => {
+                let val = textInput.value;
+                let converted = '';
+                for (let i = 0; i < val.length; i++) {
+                    converted += i % 2 === 0 ? val[i].toLowerCase() : val[i].toUpperCase();
+                }
+                textInput.value = converted;
+                updateStats();
+            });
+
+            // Clear Button
+            clearBtn.addEventListener('click', () => {
+                textInput.value = '';
+                updateStats();
+            });
+
+            // Copy Button with Feedback Animation
+            copyBtn.addEventListener('click', () => {
+                if (!textInput.value.trim()) return;
+
+                navigator.clipboard.writeText(textInput.value).then(() => {
+                    const originalText = copyBtn.innerText;
+                    copyBtn.innerText = "Copied to Clipboard! ✔";
+                    copyBtn.classList.add("copied");
+
+                    setTimeout(() => {
+                        copyBtn.innerText = originalText;
+                        copyBtn.classList.remove("copied");
+                    }, 2000);
+                }).catch(err => {
+                    console.error("Copy failed:", err);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

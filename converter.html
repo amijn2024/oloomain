@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3XCQS1MRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-M3XCQS1MRR');
+    </script>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Free Online Image Converter & Compressor | Convert WebP, JPG, PNG | oloo.fyi</title>
+    <meta name="description" content="Free online image converter & compressor. Convert, resize & compress images to WebP, JPG, or PNG directly in your browser. No upload, private & fast. Try it now.">
+    <meta name="keywords" content="image converter, image compressor, convert to webp, convert to jpg, convert to png, resize image, online image converter, free image compressor, browser image tool, no upload image converter, oloo.fyi converter">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="oloo.fyi">
+    <link rel="canonical" href="https://oloo.fyi/converter">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Free Online Image Converter & Compressor | oloo.fyi">
+    <meta property="og:description" content="Convert, resize & compress images to WebP, JPG, or PNG directly in your browser. No upload needed, fully private and fast.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oloo.fyi/converter">
+    <meta property="og:image" content="https://oloo.fyi/logo.png"> <!-- Replace with actual image URL -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="oloo.fyi">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Online Image Converter & Compressor | oloo.fyi">
+    <meta name="twitter:description" content="Convert, resize & compress images to WebP, JPG, or PNG directly in your browser. No upload, private & fast.">
+    <meta name="twitter:image" content="https://oloo.fyi/logo.png">
+
+
+    <!-- ==================== GOOGLE ADSENSE VERIFICATION ==================== -->
+    <meta name="google-adsense-account" content="ca-pub-7066409508007262">
+    
+    <!-- Favicon & Manifest -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Tool card styling */
+        .tool-card {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--primary);
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .form-control:focus {
+            border-color: var(--primary);
+        }
+        .flex-group {
+            display: flex;
+            gap: 15px;
+        }
+        .flex-group .form-group {
+            flex: 1;
+        }
+        .preview-area {
+            text-align: center;
+            margin-bottom: 20px;
+            display: none;
+        }
+        .preview-area img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            max-height: 300px;
+        }
+        
+        /* Content SEO sections */
+        .content-section {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: left;
+        }
+        .content-section h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        .content-section ol, 
+        .content-section ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .content-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+        .faq-item p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        
+        /* Responsive tweaks */
+        @media (max-width: 600px) {
+            .flex-group {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+    
+    <!-- Structured Data: Breadcrumb, Software App & FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://oloo.fyi/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Image Converter",
+                "item": "https://oloo.fyi/converter"
+            }
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "oloo.fyi Image Converter & Compressor",
+        "description": "Free browser-based tool to convert, resize and compress images to WebP, JPG or PNG. No upload required.",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "url": "https://oloo.fyi/converter",
+        "image": "https://oloo.fyi/og-image.jpg"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I convert an image to WebP, JPG, or PNG?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Upload your image, choose the desired output format (WebP, JPEG, or PNG), adjust quality and dimensions if needed, then click 'Convert & Download'. Everything happens locally in your browser."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are my images uploaded to a server?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. This tool runs entirely in your browser. Your images never leave your device, ensuring complete privacy and security."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I resize the image while converting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! You can set custom width and height in pixels before conversion. The image will be resized to those exact dimensions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What quality level should I use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The quality slider affects JPEG and WebP output. A value of 70-80% gives a good balance between file size and quality. PNG ignores the quality slider as it's lossless."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this image converter free to use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. The tool is 100% free with no hidden costs or watermarks."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header & Dynamic Navbar -->
+    <header>
+        <div class="nav-container">
+            <a href="/" class="logo" title="oloo.fyi Home">ProTools</a>
+            <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+                <!-- Links populated from data.json -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Image Compressor & Converter</h1>
+            <p>Free online image converter & compressor. Convert your images to WebP, JPG, or PNG. Resize and compress locally – no upload, private and fast.</p>
+        </div>
+
+        <!-- Ad Slot 1: Manual JSON Ad Banner -->
+        <div class="ad-container">
+            <span class="ad-label">Sponsored</span>
+            <div id="manual-ad-slot"></div>
+        </div>
+
+        <!-- Tool Container -->
+        <div class="tool-card" aria-label="Image conversion tool">
+            <div class="form-group">
+                <label for="uploadImg">Select an Image (JPG, PNG, WebP)</label>
+                <input type="file" id="uploadImg" class="form-control" accept="image/*">
+            </div>
+
+            <!-- Preview Area -->
+            <div class="preview-area" id="previewArea">
+                <p style="font-size: 12px; color: #777; margin-bottom: 5px;">Original Image Preview:</p>
+                <img id="imagePreview" alt="Uploaded image preview" title="Preview of your uploaded image">
+            </div>
+
+            <div class="flex-group">
+                <div class="form-group">
+                    <label for="outFormat">Convert To</label>
+                    <select id="outFormat" class="form-control">
+                        <option value="image/webp">WebP</option>
+                        <option value="image/jpeg">JPG / JPEG</option>
+                        <option value="image/png">PNG</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quality">Quality (<span id="qValue">80</span>%)</label>
+                    <input type="range" id="quality" min="10" max="100" value="80" class="form-control" style="padding:0; height: 40px;">
+                    <small style="font-size: 11px; color: #888;">PNG ignores quality slider</small>
+                </div>
+            </div>
+
+            <div class="flex-group">
+                <div class="form-group">
+                    <label for="imgWidth">Width (px)</label>
+                    <input type="number" id="imgWidth" class="form-control" placeholder="Auto">
+                </div>
+                <div class="form-group">
+                    <label for="imgHeight">Height (px)</label>
+                    <input type="number" id="imgHeight" class="form-control" placeholder="Auto">
+                </div>
+            </div>
+
+            <button class="btn" id="convertBtn" style="width: 100%;" aria-label="Convert and download the image">Convert & Download</button>
+        </div>
+
+        <!-- How to Use Section (SEO content) -->
+        <section class="content-section" aria-labelledby="how-to-heading">
+            <h2 id="how-to-heading">How to Use the Image Converter</h2>
+            <ol>
+                <li><strong>Upload your image</strong> – Click "Select an Image" and choose a file from your device (JPG, PNG, or WebP).</li>
+                <li><strong>Preview instantly</strong> – See your original image right inside the tool before making changes.</li>
+                <li><strong>Choose output format</strong> – Select WebP (recommended for web), JPEG, or PNG from the dropdown.</li>
+                <li><strong>Adjust quality & dimensions</strong> – Drag the quality slider (10–100%) for WebP/JPEG and optionally set new width/height in pixels.</li>
+                <li><strong>Convert & download</strong> – Hit the button and your converted, resized image saves directly to your device – no waiting, no server upload.</li>
+            </ol>
+            <p style="font-style: italic; color: var(--text-secondary);">💡 All processing happens locally in your browser for maximum speed and privacy.</p>
+        </section>
+
+        <!-- FAQ Section (SEO content with structured data) -->
+        <section class="content-section" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How do I convert an image to WebP, JPG, or PNG?</h3>
+                <p>Upload your image, choose the desired output format (WebP, JPEG, or PNG), adjust quality and dimensions if needed, then click 'Convert & Download'. Everything happens locally in your browser.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are my images uploaded to a server?</h3>
+                <p>No. This tool runs entirely in your browser. Your images never leave your device, ensuring complete privacy and security.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I resize the image while converting?</h3>
+                <p>Yes! You can set custom width and height in pixels before conversion. The image will be resized to those exact dimensions.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What quality level should I use?</h3>
+                <p>The quality slider affects JPEG and WebP output. A value of 70-80% gives a good balance between file size and quality. PNG ignores the quality slider as it's lossless.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is this image converter free to use?</h3>
+                <p>Absolutely. The tool is 100% free with no hidden costs or watermarks.</p>
+            </div>
+        </section>
+
+        <!-- Ad Slot 2: Google AdSense Banner -->
+        <div class="ad-container">
+            <span class="ad-label">Advertisement</span>
+            <div style="background: #ddd; height: 90px; display: flex; align-items: center; justify-content: center; color: #777;">
+                AdSense Banner Slot
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="subscribe-box">
+                <input type="email" placeholder="Enter your email address" required aria-label="Email for updates">
+                <button class="btn">Subscribe</button>
+            </div>
+            <div class="compliance-links">
+                <a href="privacy-policy" title="Privacy Policy">Privacy Policy</a>
+                <a href="terms" title="Terms of Service">Terms of Service</a>
+                <a href="about" title="About Us">About Us</a>
+                <a href="contact" title="Contact Us">Contact Us</a>
+            </div>
+            <p style="margin-top: 15px; font-size: 12px; color: #999;">&copy; 2026 ProTools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JS for Navbar/Ads -->
+    <script src="main.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7066409508007262" crossorigin="anonymous"></script>
+
+    <!-- Tool Specific JavaScript (unchanged functionality) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const uploadImg = document.getElementById('uploadImg');
+            const imagePreview = document.getElementById('imagePreview');
+            const previewArea = document.getElementById('previewArea');
+            const outFormat = document.getElementById('outFormat');
+            const quality = document.getElementById('quality');
+            const qValue = document.getElementById('qValue');
+            const imgWidth = document.getElementById('imgWidth');
+            const imgHeight = document.getElementById('imgHeight');
+            const convertBtn = document.getElementById('convertBtn');
+            
+            let originalImage = new Image();
+
+            // Update Quality Text
+            quality.addEventListener('input', (e) => {
+                qValue.textContent = e.target.value;
+            });
+
+            // Handle Image Upload
+            uploadImg.addEventListener('change', (e) => {
+                const file = e.target.files[0];
+                if (!file) return;
+
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    originalImage.src = event.target.result;
+                    originalImage.onload = () => {
+                        // Set preview and display dimensions
+                        imagePreview.src = originalImage.src;
+                        previewArea.style.display = 'block';
+                        imgWidth.value = originalImage.width;
+                        imgHeight.value = originalImage.height;
+                    }
+                };
+                reader.readAsDataURL(file);
+            });
+
+            // Handle Convert & Download
+            convertBtn.addEventListener('click', () => {
+                if (!originalImage.src) {
+                    alert("Please upload an image first!");
+                    return;
+                }
+
+                // Create a Canvas to draw and resize the image
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                
+                // Get values
+                const targetWidth = parseInt(imgWidth.value) || originalImage.width;
+                const targetHeight = parseInt(imgHeight.value) || originalImage.height;
+                const format = outFormat.value;
+                const compQuality = parseInt(quality.value) / 100;
+
+                // Set canvas size
+                canvas.width = targetWidth;
+                canvas.height = targetHeight;
+
+                // Draw image on canvas
+                ctx.drawImage(originalImage, 0, 0, targetWidth, targetHeight);
+
+                // Convert to Data URL
+                const dataUrl = canvas.toDataURL(format, compQuality);
+
+                // Setup Download Link
+                const link = document.createElement('a');
+                link.download = `converted-image.${format.split('/')[1]}`;
+                link.href = dataUrl;
+                link.click();
+            });
+        });
+    </script>
+</body>
+</html>

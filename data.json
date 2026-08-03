@@ -1,0 +1,20 @@
+{
+  "navbar": [
+    { "name": "Home", "link": "/" },
+    { "name": "BG Remove", "link": "bg-remove" },
+    { "name": "IG Grid Maker", "link": "grid-maker" },
+    { "name": "Image Converter", "link": "converter" },
+    { "name": "Tags Generator", "link": "tags" },
+    { "name": "Font Generator", "link": "font-generator" },
+        { "name": "Crop", "link": "cropper" },
+    { "name": "Case Converter", "link": "case-converter" },
+        { "name": "Caption Spacer", "link": "caption-spacer" },
+    { "name": "Script Calculator", "link": "script-length-calculator" },
+    { "name": "Thumbnail Text Adder", "link": "thumbnail-text-adder" }
+    
+  ],
+  "manual_ad": {
+    "imageUrl": "https://app.oloo.fyi/image/ads.png",
+    "targetUrl": "https://regi.iarco.org"
+  }
+}
