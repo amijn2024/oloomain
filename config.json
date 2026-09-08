@@ -14,6 +14,11 @@
   "site": {
     "name": "ProTools",
     "url": "https://oloo.fyi",
-    "blogEnabled": true
+    "blogEnabled": true,
+    "analyticsEnabled": true
+  },
+  "privacy": {
+    "consentManagementRequiredForApplicableRegions": true,
+    "consentModeIntegration": "Configure a Google-certified CMP / Privacy & messaging before serving personalized advertising in regions where consent is required."
   }
 }
