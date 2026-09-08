@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         .filter(item => config.site?.blogEnabled !== false || item.link !== 'blog')
         .forEach(item => {
           const a = document.createElement('a');
-          a.href = item.link;
+          a.href = item.link === '/' ? '/' : `/${item.link.replace(/^\//, '')}`;
           a.className = 'nav-link';
           a.innerHTML = `<span class="nav-icon">${iconSvg(item.icon)}</span><span>${item.name}</span>`;
           if (currentPage === normalizePath(item.link)) {
