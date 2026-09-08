@@ -1,18 +1,65 @@
-
 {
   "navbar": [
-    { "name": "Home", "link": "/" },
-    { "name": "BG Remove", "link": "bg-remove" },
-    { "name": "IG Grid Maker", "link": "grid-maker" },
-    { "name": "Image Converter", "link": "converter" },
-    { "name": "Tags Generator", "link": "tags" },
-    { "name": "Font Generator", "link": "font-generator" },
-        { "name": "Crop", "link": "cropper" },
-    { "name": "Case Converter", "link": "case-converter" },
-        { "name": "Caption Spacer", "link": "caption-spacer" },
-    { "name": "Script Calculator", "link": "script-length-calculator" },
-    { "name": "Thumbnail Text Adder", "link": "thumbnail-text-adder" }
-    
+    {
+      "name": "Home",
+      "link": "/",
+      "icon": "home"
+    },
+    {
+      "name": "BG Remove",
+      "link": "bg-remove",
+      "icon": "image"
+    },
+    {
+      "name": "IG Grid Maker",
+      "link": "grid-maker",
+      "icon": "grid"
+    },
+    {
+      "name": "Image Converter",
+      "link": "converter",
+      "icon": "refresh"
+    },
+    {
+      "name": "Tags Generator",
+      "link": "tags",
+      "icon": "tag"
+    },
+    {
+      "name": "Font Generator",
+      "link": "font-generator",
+      "icon": "type"
+    },
+    {
+      "name": "Crop",
+      "link": "cropper",
+      "icon": "crop"
+    },
+    {
+      "name": "Case Converter",
+      "link": "case-converter",
+      "icon": "case"
+    },
+    {
+      "name": "Caption Spacer",
+      "link": "caption-spacer",
+      "icon": "align"
+    },
+    {
+      "name": "Script Calculator",
+      "link": "script-length-calculator",
+      "icon": "clock"
+    },
+    {
+      "name": "Thumbnail Text Adder",
+      "link": "thumbnail-text-adder",
+      "icon": "edit"
+    },
+    {
+      "name": "Blog",
+      "link": "blog",
+      "icon": "book"
+    }
   ],
   "manual_ad": {
     "imageUrl": "https://oloo.fyi/image/ads.png",

@@ -1,0 +1,19 @@
+{
+  "ads": {
+    "googleAds": {
+      "enabled": false,
+      "client": "ca-pub-7066409508007262",
+      "slot": "",
+      "format": "auto",
+      "fullWidthResponsive": true
+    },
+    "sponsoredAds": {
+      "enabled": true
+    }
+  },
+  "site": {
+    "name": "ProTools",
+    "url": "https://oloo.fyi",
+    "blogEnabled": true
+  }
+}
